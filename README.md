@@ -22,7 +22,7 @@ createApplicationActionString({
 // 'Teamleader/Calendar/Application/Routing/Calendars/GOTO_TODAY'
 
 
-createApplicationActionString({
+createDomainActionString({
   company: 'teamleader',
   domain: 'events',
   action: 'initialize',
