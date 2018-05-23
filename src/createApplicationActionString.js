@@ -11,4 +11,4 @@ type options = {
 
 // <Company>/Application/<Application>/<Domain>/<Action>
 
-export default (params: options = {}): string => createActionString({ ...params, type: 'application' });
+export default (params: options): string => createActionString({ ...params, type: 'application' });
