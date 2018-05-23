@@ -1,3 +1,5 @@
+// @flow
+
 import createActionString from './createActionString';
 
 import createApplicationActionString from './createApplicationActionString';
