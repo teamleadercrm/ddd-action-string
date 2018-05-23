@@ -1,0 +1,28 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["standard", "prettier"],
+  "plugins": ["babel", "prettier"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 120,
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+    ],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ],
+    "curly": ["error", "all"],
+    "camelcase": 0
+  }
+}
