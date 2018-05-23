@@ -8,7 +8,7 @@ type options = {
   action: string,
 };
 
-export default (params: options = {}): string =>
+export default (params: options): string[] =>
   ['REQUEST', 'SUCCESS', 'FAIL'].map(suffix =>
     createDomainActionString({ ...params, action: `${params.action}_${suffix}` }),
   );

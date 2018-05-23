@@ -9,4 +9,4 @@ type options = {
 };
 
 // <Company>/Application/<Domain>/<Action>
-export default (params: options = {}): string => createActionString({ ...params, type: 'domains', application: '' });
+export default (params: options): string => createActionString({ ...params, type: 'domains', application: '' });
