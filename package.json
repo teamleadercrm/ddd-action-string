@@ -12,7 +12,7 @@
     "build": "microbundle",
     "start": "microbundle watch",
     "lint": "eslint --config ./.eslintrc src",
-    "lint:fix": "npm run lint -- --fix"
+    "flow": "flow"
   },
   "repository": {
     "type": "git",
