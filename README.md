@@ -38,7 +38,7 @@ createRequestActionStrings({
   [
     'Teamleader/Domain/Events/LIST_REQUEST',
     'Teamleader/Domain/Events/LIST_SUCCESS',
-    'Teamleader/Domain/Events/LIST_FAIL'
+    'Teamleader/Domain/Events/LIST_FAILURE'
   ]
 */
 ```

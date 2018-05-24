@@ -2,7 +2,7 @@ import createRequestActionStrings from '../createRequestActionStrings';
 
 // <Organisation>/Domain/<Domain>/<ACTION>_REQUEST,
 // <Organisation>/Domain/<Domain>/<ACTION>_SUCCESS,
-// <Organisation>/Domain/<Domain>/<ACTION>_FAIL,
+// <Organisation>/Domain/<Domain>/<ACTION>FAILURE,
 
 describe(`createRequestActionStrings`, () => {
   it(`should create a correct request action string with the provided parameters`, () => {
@@ -15,7 +15,7 @@ describe(`createRequestActionStrings`, () => {
     ).toEqual([
       'Teamleader/Domains/Events/LIST_REQUEST',
       'Teamleader/Domains/Events/LIST_SUCCESS',
-      'Teamleader/Domains/Events/LIST_FAIL',
+      'Teamleader/Domains/Events/LIST_FAILURE',
     ]);
   });
 });

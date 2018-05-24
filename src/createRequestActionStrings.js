@@ -9,6 +9,6 @@ type options = {
 };
 
 export default (params: options): string[] =>
-  ['REQUEST', 'SUCCESS', 'FAIL'].map(suffix =>
+  ['REQUEST', 'SUCCESS', 'FAILURE'].map(suffix =>
     createDomainActionString({ ...params, action: `${params.action}_${suffix}` }),
   );
