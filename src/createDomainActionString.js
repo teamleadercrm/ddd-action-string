@@ -3,10 +3,10 @@
 import createActionString from './createActionString';
 
 type options = {
-  company: string,
+  organisation: string,
   domain: string,
   action: string,
 };
 
-// <Company>/Application/<Domain>/<Action>
+// <Organisation>/Application/<Domain>/<Action>
 export default (params: options): string => createActionString({ ...params, type: 'domains', application: '' });

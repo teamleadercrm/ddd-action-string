@@ -1,12 +1,12 @@
 import createApplicationActionString from '../createApplicationActionString';
 
-// <Company>/Application/<Domain>/<ACTION>
+// <Organisation>/Application/<Domain>/<ACTION>
 
 describe(`createApplicationActionString`, () => {
   it(`should create a correct domain action string with the provided parameters`, () => {
     expect(
       createApplicationActionString({
-        company: 'teamleader',
+        organisation: 'teamleader',
         application: 'calendar',
         domain: 'routing/calendars',
         action: 'goto_today',
@@ -15,7 +15,7 @@ describe(`createApplicationActionString`, () => {
 
     expect(
       createApplicationActionString({
-        company: 'teamleader',
+        organisation: 'teamleader',
         application: 'calendar',
         domain: 'routing/calendars',
         action: 'WEEK',

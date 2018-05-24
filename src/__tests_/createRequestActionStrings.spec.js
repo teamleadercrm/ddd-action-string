@@ -1,14 +1,14 @@
 import createRequestActionStrings from '../createRequestActionStrings';
 
-// <Company>/Domain/<Domain>/<ACTION>_REQUEST,
-// <Company>/Domain/<Domain>/<ACTION>_SUCCESS,
-// <Company>/Domain/<Domain>/<ACTION>_FAIL,
+// <Organisation>/Domain/<Domain>/<ACTION>_REQUEST,
+// <Organisation>/Domain/<Domain>/<ACTION>_SUCCESS,
+// <Organisation>/Domain/<Domain>/<ACTION>_FAIL,
 
 describe(`createRequestActionStrings`, () => {
   it(`should create a correct request action string with the provided parameters`, () => {
     expect(
       createRequestActionStrings({
-        company: 'teamleader',
+        organisation: 'teamleader',
         domain: 'events',
         action: 'list',
       }),

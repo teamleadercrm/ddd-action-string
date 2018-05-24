@@ -5,15 +5,14 @@
 ## Example
 
 ```js
-
 import {
   createApplicationActionString,
   createDomainActionString,
-  createRequestActionStrings
+  createRequestActionStrings,
 } from '@teamleader/ddd-action-string';
 
 createApplicationActionString({
-  company: 'teamleader',
+  organisation: 'teamleader',
   application: 'calendar',
   domain: 'routing/calendars',
   action: 'goto_today',
@@ -21,18 +20,16 @@ createApplicationActionString({
 
 // 'Teamleader/Calendar/Application/Routing/Calendars/GOTO_TODAY'
 
-
 createDomainActionString({
-  company: 'teamleader',
+  organisation: 'teamleader',
   domain: 'events',
   action: 'initialize',
 });
 
 // 'Teamleader/Domain/Events/INITIALIZE'
 
-
 createRequestActionStrings({
-  company: 'teamleader',
+  organisation: 'teamleader',
   domain: 'events',
   action: 'list',
 });
@@ -44,6 +41,4 @@ createRequestActionStrings({
     'Teamleader/Domain/Events/LIST_FAIL'
   ]
 */
-
-
 ```

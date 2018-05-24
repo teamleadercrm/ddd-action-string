@@ -3,7 +3,7 @@
 import createDomainActionString from './createDomainActionString';
 
 type options = {
-  company: string,
+  organisation: string,
   domain: string,
   action: string,
 };

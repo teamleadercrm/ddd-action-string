@@ -3,12 +3,12 @@
 import ucFirst from './ucFirst';
 
 type options = {
-  company: string,
+  organisation: string,
   type: string,
   application?: string,
 };
 
-// <Company>/<Application?>/<Type>
+// <Organisation>/<Application?>/<Type>
 
-export default ({ company, application = '', type }: options): string =>
-  `${ucFirst(company)}/${application ? `${ucFirst(application)}/` : ''}${ucFirst(type)}`;
+export default ({ organisation, application = '', type }: options): string =>
+  `${ucFirst(organisation)}/${application ? `${ucFirst(application)}/` : ''}${ucFirst(type)}`;

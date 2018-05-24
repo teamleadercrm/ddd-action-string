@@ -1,12 +1,12 @@
 import createDomainActionString from '../createDomainActionString';
 
-// <Company>/Domain/<Domain>/<ACTION>
+// <Organisation>/Domain/<Domain>/<ACTION>
 
 describe(`createDomainActionString`, () => {
   it(`should create a correct domain action string with the provided parameters`, () => {
     expect(
       createDomainActionString({
-        company: 'teamleader',
+        organisation: 'teamleader',
         domain: 'events',
         application: 'calendar',
         action: 'list_request',
@@ -15,7 +15,7 @@ describe(`createDomainActionString`, () => {
 
     expect(
       createDomainActionString({
-        company: 'teamleader',
+        organisation: 'teamleader',
         domain: 'Events',
         application: 'calendar',
         action: 'lIST_request',
@@ -24,7 +24,7 @@ describe(`createDomainActionString`, () => {
 
     expect(
       createDomainActionString({
-        company: 'Teamleader',
+        organisation: 'Teamleader',
         domain: 'events',
         action: 'list_REQUEST',
       }),
