@@ -1,7 +1,7 @@
 {
   "name": "@teamleader/ddd-action-string",
-  "version": "0.1.0",
-  "description": "helpers to generate domain-driven design inspired action strings for Redux",
+  "version": "0.1.1",
+  "description": "Helpers to create domain-driven design (DDD) inspired action strings for Redux",
   "source": "src/index.js",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
