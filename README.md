@@ -1,8 +1,22 @@
-# ddd-action-string
+# @teamleader/ddd-action-string [![npm version](https://badge.fury.io/js/%40teamleader%2Fddd-action-string.svg)](https://badge.fury.io/js/%40teamleader%2Fddd-action-string)
 
-> helpers to generate domain-driven design inspired action strings
+Helpers to create domain-driven design (DDD) inspired action strings for Redux
 
-## Example
+## Installation
+
+NPM
+
+```bash
+npm i @teamleader/ddd-action-string
+```
+
+Yarn
+
+```bash
+yarn add @teamleader/ddd-action-string
+```
+
+## Usage Example
 
 ```js
 import {
@@ -42,3 +56,5 @@ createRequestActionStrings({
   ]
 */
 ```
+
+[MIT](LICENSE)
